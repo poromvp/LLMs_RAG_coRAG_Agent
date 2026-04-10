@@ -1,0 +1,30 @@
+# Python (Byte-compiled / optimized / DLL files)
+__pycache__/
+*.py[cod]
+*$py.class
+myenv/
+venv/
+env/
+.venv/
+
+# Môi trường và Bảo mật (CỰC KỲ QUAN TRỌNG)
+# Chứa API Keys của OpenAI, Gemini, Pinecone...
+.env
+.flaskenv
+
+# Vector Database (Tránh làm phình Repo)
+# Nếu bạn dùng ChromaDB, FAISS, hoặc local vector stores
+db/
+vector_db/
+chroma/
+faiss_index/
+*.index
+
+# Dữ liệu huấn luyện hoặc tài liệu đầu vào cho RAG
+# Nếu các file PDF/Text quá nặng, nên để ở máy cục bộ
+data/
+documents/
+*.pdf
+*.docx
+*.csv
+*.txt
